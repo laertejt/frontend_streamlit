@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
-caminho = str(Path(__file__).parent.resolve())
+caminho = str(Path(__file__).resolve().parent)
 
 
 st.title("Meu primeiro dashboard")
