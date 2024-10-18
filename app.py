@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from pathlib import Path
-caminho = str(Path(__file__).resolve())
+caminho = str(Path(__file__).parent.resolve())
 
 
 st.title("Meu primeiro dashboard")
@@ -29,7 +29,7 @@ with abas[1]:
 
 with abas[2]:
     # caminho = "C:\\Users\\21701079836\\Documents\\projetos\\frontend\\data"
-    df = pd.read_csv(caminho + "\\ibov.csv")
+    df = pd.read_csv(caminho + "\\data\\ibov.csv")
     st.dataframe(df)
 
 
